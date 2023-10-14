@@ -1,0 +1,137 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar li:first-child {
+    margin-left: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.signup {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.login {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.logout {
+    background-color: #e74c3c;
+    color: #fff;
+}
+.section-card {
+    margin-left: 180px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.footer {
+    margin-top: 300px;
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.footer p {
+    margin: 0;
+}
+.signup-form {
+    max-width: 400px;
+    margin: 150px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+    width: 100%;
+}
+
+.signup-form input::placeholder {
+    color: #ccc;
+}
+
+.signup-form input[type="submit"] {
+    background-color: #11e66a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signup-form input[type="submit"]:hover {
+    background-color: #24e05d;
+}
+
