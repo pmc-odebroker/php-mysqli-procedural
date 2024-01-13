@@ -1,6 +1,6 @@
 <?php
+$result;
 function emptyUserSignup($firstname, $middlename, $lastname, $email, $username, $password, $repeatpassword) {
-    $result;
     if (empty($firstname) || empty($middlename) || empty($lastname) || empty($email) || empty($username) || empty($password) || empty($repeatpassword)) {
         $result = true;
     } else {
@@ -11,7 +11,6 @@ function emptyUserSignup($firstname, $middlename, $lastname, $email, $username, 
 }
 
 function InvalidUsername($username) {
-    $result;
     if (!preg_match("/^[a-zA-Z0-9_]{5,15}$/", $username)) {
         $result = true;
     } else {
@@ -22,7 +21,6 @@ function InvalidUsername($username) {
 }
 
 function InvalidEmail($email) {
-    $result;
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $result = true;
     } else {
@@ -33,7 +31,6 @@ function InvalidEmail($email) {
 }
 
 function PasswordMismatch($password, $repeatpassword) {
-    $result;
     if ($password !== $repeatpassword) {
         $result = true;
     } else {
@@ -46,7 +43,6 @@ function PasswordMismatch($password, $repeatpassword) {
 function UsernameExist($conn, $username, $email) {
     $sql = "SELECT * FROM users WHERE username = ? OR email = ?;";
     $stmt = mysqli_stmt_init($conn);
-    $result;
     if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("location: ../signup.php?error=stmtfailed");
     }
