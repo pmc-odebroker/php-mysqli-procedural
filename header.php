@@ -13,8 +13,8 @@
         <nav class="navbar">
             <ul>
                 <li><a href="signup.php" class="nav-link"><button class="button signup">Sign Up</button></a></li>
-                <li><a href="#" class="nav-link"><button class="button login">Login</button></a></li>
-                <li><a href="#" class="nav-link"><button class="button logout">Logout</button></a></li>
+                <li><a href="#" class="nav-link"><button class="button login">Log In</button></a></li>
+                <li><a href="#" class="nav-link"><button class="button logout">Log Out</button></a></li>
             </ul>
         </nav>
     </section>
